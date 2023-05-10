@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel='stylesheet' href="styles.css"/>
+    <link rel='stylesheet' href="styles.css" />
     <script defer src="script.js"> </script>
     <style>
-        body {margin:0}
-        
+        body {
+            margin: 0
+        }
     </style>
 </head>
+
 <body>
-    <canvas id ="gameCanvas" width ="800" height="600"></canvas>
+    <div class="game-container invisible">
+        <div id="score"></div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <div class="menu-container">
+        <h3>Stretcher Transporter</h3>
+        <ul>
+            <li>arrow keys to move</li>
+            <li>Safely get patient to test</li>
+
+        </ul>
+        <button class="start-game"> Start Game
+
+        </button>
+    </div>
 </body>
+
 </html>
